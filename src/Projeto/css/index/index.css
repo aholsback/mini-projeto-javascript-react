@@ -1,0 +1,180 @@
+.carrossel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.estrutura-carrossel {
+    display: flex; /* Para deixar as imagens lado a lado. */
+    width: 300vw;
+}
+
+.estrutura-carrossel input {
+    display: none;
+}
+
+#radio1:checked ~ .ativo {
+    margin-left: 0;
+}
+
+#radio1:checked ~ .nav-automatica #botao-auto-1 {
+    background-color: var(--cor-2);
+}
+
+#radio2:checked ~ .ativo {
+    margin-left: -100vw;
+}
+
+#radio2:checked ~ .nav-automatica #botao-auto-2 {
+    background-color: var(--cor-2);
+}
+
+#radio3:checked ~ .ativo {
+    margin-left: -200vw;
+}
+
+#radio3:checked ~ .nav-automatica #botao-auto-3 {
+    background-color: var(--cor-2);
+}
+
+#radio4:checked ~ .ativo {
+    margin-left: -300vw;
+}
+
+#radio4:checked ~ .nav-automatica #botao-auto-4 {
+    background-color: var(--cor-2);
+}
+
+.itens-carrossel {
+    position: relative;
+    width: 100vw;
+    transition: 1s;
+}
+
+.img-carrossel {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.dependencias-carrossel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35vh;
+    left: 10vw;
+    right: 10vw;
+    width: auto;
+    height: 45vh;
+}
+
+.grid-dependencias {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.flex-direction-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.flex-direction-row.alinhar-meio {
+    justify-content: center !important;
+}
+
+.flex-direction-column.alinhar-meio {
+    align-items: center !important;
+}
+
+.carrossel-esquerda {
+    width: 35vw;
+    height: auto;
+    padding: 20px;
+}
+
+.carrossel-meio {
+    width: 80vw;
+    height: auto;
+    padding: 20px;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.carrossel-direita {
+    width: 35vw;
+    height: auto;
+    padding: 20px;
+}
+
+.carrossel-fonte-azul {
+    color: var(--cor-2);
+    font-size: 2em;
+    text-align: center;
+}
+
+.carrossel-fonte-laranja {
+    color: var(--cor-5);
+    font-size: 2.5em !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.botao-carrossel {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: var(--cor-2);
+    border: 2px solid var(--cor-2);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.botao-carrossel:hover {
+    color: var(--cor-5);
+    background-color: var(--cor-2);
+}
+
+.nav-automatica, .nav-manual {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    top: 90vh;
+    justify-content: center;
+}
+
+.botao-auto, .botao-manual {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border: 2px solid var(--cor-2);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.botao-auto:not(:last-child), .botao-manual:not(:last-child) {
+    margin-right: 15px;
+}
+
+.botao-auto:hover, .botao-manual:hover {
+    background-color: var(--cor-2);
+}

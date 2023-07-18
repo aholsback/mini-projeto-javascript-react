@@ -1,0 +1,40 @@
+/* RESPONSIVIDADE DE TELA */
+/* De 320px a 767px */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .nossa-equipe h1 {
+        font-size: 1.5em;
+    }
+
+    .pessoas {
+        grid-template-columns: auto;
+    }
+
+    .foto-equipe {
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .nome-cargo h4 {
+        font-size: 1.2em;
+    }
+    
+    .nome-cargo h6 {
+        font-size: 1em;
+    }
+}
+
+/* De 768px a 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .pessoas {
+        grid-template-columns: auto auto;
+    }
+
+    .nome-cargo h4 {
+        font-size: 1.5em;
+    }
+    
+    .nome-cargo h6 {
+        font-size: 0.9em;
+    }
+}

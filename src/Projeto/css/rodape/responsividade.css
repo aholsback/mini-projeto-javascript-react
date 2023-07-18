@@ -1,0 +1,25 @@
+/* RESPONSIVIDADE DE TELA */
+/* De 320px a 575px */
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .grupo-redes {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* De 320px a 991px */
+@media screen and (min-width: 320px) and (max-width: 991px) {
+    .lista-menu-rodape {
+        flex-direction: column;
+    }
+
+    .redes-pagamentos {
+        grid-template-columns: auto;
+    }
+}
+
+/* A partir de 992px */
+@media screen and (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+    }
+}

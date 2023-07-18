@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: var(--fonte-primaria);
+}
+
+body {
+    background-image: url(../img/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fonte-1 {
+    font-family: var(--fonte-primaria);
+}
+
+.fonte-2 {
+    font-family: var(--fonte-secundaria);
+}
+
+.fonte-3 {
+    font-family: var(--fonte-terciaria);
+}

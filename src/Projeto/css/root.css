@@ -1,0 +1,19 @@
+:root {
+    /* PALETA DE CORES DO SITE */
+    --cor-1: #010326;
+    --cor-2: #010B40;
+    --cor-3: #F0F2F1;
+    --cor-4: rgb(242, 116, 5);
+    --cor-5: #f25c05;
+
+    /* FONTES PADRÕES DO SITE */
+    --fonte-primaria: 'Playfair Display', 'Times New Roman', Times, serif;
+    --fonte-secundaria: 'Coiny', cursive;
+    --fonte-terciaria: 'Sacramento', cursive;
+
+    /* EFEITOS */
+    --cor-vidro: rgba(255, 255, 255, 0.3);
+    --cor-vidro-rodape: rgba(242, 116, 5, 0.6);
+    --sombra-vidro: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --filtro-vidro: blur(5px);
+}

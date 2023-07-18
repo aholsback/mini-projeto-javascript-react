@@ -1,0 +1,55 @@
+.contato {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.formulario-contato {
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--cor-vidro);
+    box-shadow: var(--sombra-vidro);
+    backdrop-filter: var(--filtro-vidro);
+    -webkit-backdrop-filter: var(--filtro-vidro);
+}
+
+h2 {
+    color: var(--cor-2) !important;
+    text-transform: uppercase;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    word-spacing: 1px !important;
+    display: flex;
+    justify-content: center !important;
+}
+
+h2:hover {
+    color: var(--cor-5) !important;
+}
+
+label {
+    color: var(--cor-2);
+    font-weight: 700;
+}
+
+label:hover {
+    color: var(--cor-5);
+}
+
+.botao-contato {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: var(--cor-2);
+    border: 2px solid var(--cor-2);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.botao-contato:hover {
+    color: var(--cor-5);
+    background-color: var(--cor-2);
+}

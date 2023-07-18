@@ -1,0 +1,39 @@
+/* RESPONSIVIDADE DE TELA */
+/* De 320px a 1199px */
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+    .logotipo {
+        width: 150px;
+        height: 72px;
+    }
+}
+
+/* A partir de 992px */
+@media screen and (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+    }
+}
+
+/* De 320px a 991px */
+@media screen and (min-width: 320px) and (max-width: 991px) {
+    .lista-menu  {
+        padding-right: 20px;
+    }
+
+    .lista-menu .nav-link  {
+        display: flex;
+        justify-content: end;
+    }
+
+    .pesquisar {
+        margin-right: 10px;
+    }
+}
+
+/* A partir de 1200px */
+@media screen and (min-width: 1200px) {
+    .logotipo {
+        width: 200px;
+        height: 96px;
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    overflow-x: hidden;
+}
+
+.equipe {
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.nossa-equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--cor-vidro);
+    box-shadow: var(--sombra-vidro);
+    backdrop-filter: var(--filtro-vidro);
+    -webkit-backdrop-filter: var(--filtro-vidro);
+}
+
+.nossa-equipe h1 {
+    color: var(--cor-2);
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.nossa-equipe h1:hover {
+    color: var(--cor-5);
+}
+
+.pessoas {
+    padding: 20px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-equipe {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 4px solid var(--cor-2);
+}
+
+.nome-cargo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome-cargo h4 {
+    color: var(--cor-2);
+    font-size: 2em;
+}
+
+.nome-cargo h6 {
+    color: var(--cor-1);
+    font-size: 1.1em;
+}
+
+.pessoa:hover {
+    .foto-equipe {
+        border: 4px solid var(--cor-5);
+        border-radius: 200px;
+    }
+
+    .nome-cargo h4 {
+        color: var(--cor-5);
+    }
+
+    .nome-cargo h6 {
+        color: var(--cor-5);
+    }
+}

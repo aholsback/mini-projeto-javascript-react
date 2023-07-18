@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+}
+
+.sobre {
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--cor-vidro);
+    box-shadow: var(--sombra-vidro);
+    backdrop-filter: var(--filtro-vidro);
+    -webkit-backdrop-filter: var(--filtro-vidro);
+}
+
+.sobre-nos h1 {
+    color: var(--cor-2);
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sobre-nos h1:hover {
+    color: var(--cor-5);
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-indent: 3em;
+    text-align: justify;
+}
+
+p:hover {
+    color: var(--cor-5);
+}
+
+.texto-foto {
+    display: flex;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.foto img {
+    width: 45vw;
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 500px;
+    border: 4px solid var(--cor-2);
+}
+
+.foto img:hover {
+    border: 4px solid var(--cor-5);
+}
+
+.margem-esquerda {
+    margin-left: 40px;
+}
+
+.margem-direita {
+    margin-right: 40px;
+}

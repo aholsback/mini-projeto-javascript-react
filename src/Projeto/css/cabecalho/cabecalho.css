@@ -1,0 +1,119 @@
+.cabecalho {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+}
+
+header {
+    height: auto;
+}
+
+.area-usuario {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login, .carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: var(--cor-1) !important;
+    font-size: 1em !important;
+    border: none;
+    border-radius: 20px;
+    background: var(--cor-vidro);
+    box-shadow: var(--sombra-vidro);
+    backdrop-filter: var(--filtro-vidro);
+    -webkit-backdrop-filter: var(--filtro-vidro);
+}
+
+.login:hover, .carrinho:hover {
+    color: var(--cor-5) !important;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.conteudo-menu {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.logotipo {
+    object-fit: cover;
+}
+
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px !important;
+    color: var(--cor-1) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    background: var(--cor-vidro) !important;
+    box-shadow: var(--sombra-vidro) !important;
+    backdrop-filter: var(--filtro-vidro) !important;
+    -webkit-backdrop-filter: var(--filtro-vidro) !important;
+}
+
+.navbar-toggler .fechar {
+    display: none;
+}
+
+.navbar-collapse {
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--cor-vidro) !important;
+    box-shadow: var(--sombra-vidro) !important;
+    backdrop-filter: var(--filtro-vidro) !important;
+    -webkit-backdrop-filter: var(--filtro-vidro) !important;
+}
+
+.lista-menu {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 !important;
+    padding-inline-start: 0;
+    padding-inline-end: 3.5vw;
+    width: 100%;
+}
+
+.nav-link.active {
+    color: var(--cor-5) !important;
+}
+
+.nav-link {
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+}
+
+.nav-link:hover {
+    color: var(--cor-2) !important;
+}
+
+.pesquisar {
+    border: 2px solid var(--cor-5);
+}
+
+.pesquisar .btn {
+    color: var(--cor-5);
+}
+
+.pesquisar .btn:hover {
+    color: var(--cor-3);
+    background-color: var(--cor-5);
+}
