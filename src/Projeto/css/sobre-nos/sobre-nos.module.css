@@ -9,7 +9,7 @@ body {
     padding-bottom: 40px;
 }
 
-.sobre-nos {
+.sobreNos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,15 +23,16 @@ body {
     -webkit-backdrop-filter: var(--filtro-vidro);
 }
 
-.sobre-nos h1 {
+.sobreNos h1 {
     color: var(--cor-2);
+    font-size: 2.5em;
     font-weight: 800;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-transform: uppercase;
 }
 
-.sobre-nos h1:hover {
+.sobreNos h1:hover {
     color: var(--cor-5);
 }
 
@@ -46,7 +47,7 @@ p:hover {
     color: var(--cor-5);
 }
 
-.texto-foto {
+.textoFoto {
     display: flex;
 }
 
@@ -70,10 +71,23 @@ p:hover {
     border: 4px solid var(--cor-5);
 }
 
-.margem-esquerda {
+.margemEsquerda {
     margin-left: 40px;
 }
 
-.margem-direita {
+.margemDireita {
     margin-right: 40px;
+}
+
+/* RESPONSIVIDADE TELA */
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .sobreNos h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    .foto img {
+        display: none;
+    }
 }

@@ -11,14 +11,14 @@ body {
     background-repeat: no-repeat;
 }
 
-.fonte-1 {
+.fonte-1, .fonte1 {
     font-family: var(--fonte-primaria);
 }
 
-.fonte-2 {
+.fonte-2, .fonte2 {
     font-family: var(--fonte-secundaria);
 }
 
-.fonte-3 {
+.fonte-3, .fonte3 {
     font-family: var(--fonte-terciaria);
 }

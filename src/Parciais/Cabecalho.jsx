@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../Projeto/css/cabecalho/cabecalho.css";
-import "../Projeto/css/cabecalho/responsividade.css";
 import Logotipo from "../Projeto/img/logotipo.png";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
