@@ -19,19 +19,19 @@ export const OffCanvasLista = (props) => {
       <ListGroup className="text-center justify-content-center">
          <ListGroup.Item>
             <Row>
-               <Col xs={6}>
+               <Col xs={6} className="d-flex justify-content-center">
                   <b>
                      PRODUTO
                   </b>
                </Col>
 
-               <Col xs={2}>
+               <Col xs={2} className="d-flex justify-content-center">
                   <b>
                      QNT
                   </b>
                </Col>
 
-               <Col xs={4}>
+               <Col xs={4} className="d-flex justify-content-center">
                   <b>
                      PREÇO
                   </b>
@@ -43,19 +43,19 @@ export const OffCanvasLista = (props) => {
             return (
                <ListGroup.Item key={index}>
                   <Row>
-                     <Col xs={2}>
+                     <Col xs={2} className="d-flex align-items-center justify-content-center">
                         <img src={produto.img} width={30} height={30} className="rounded-pill" />
                      </Col>
 
-                     <Col xs={4}>
+                     <Col xs={4} className="d-flex align-items-center justify-content-center">
                         {produto.titulo}
                      </Col>
 
-                     <Col xs={2}>
+                     <Col xs={2} className="d-flex align-items-center justify-content-center">
                         {produto.quantidade}
                      </Col>
 
-                     <Col xs={4}>
+                     <Col xs={4} className="d-flex align-items-center justify-content-center">
                         R$ {produto.preco.toFixed(2).replace(".", ",")}
                      </Col>
                   </Row>

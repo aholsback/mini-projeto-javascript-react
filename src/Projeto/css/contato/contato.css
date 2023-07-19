@@ -14,7 +14,7 @@
     -webkit-backdrop-filter: var(--filtro-vidro);
 }
 
-h2 {
+.h2 {
     color: var(--cor-2) !important;
     text-transform: uppercase;
     font-weight: 800 !important;
@@ -24,7 +24,7 @@ h2 {
     justify-content: center !important;
 }
 
-h2:hover {
+.h2:hover {
     color: var(--cor-5) !important;
 }
 
