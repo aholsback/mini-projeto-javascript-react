@@ -9,11 +9,11 @@ import { Produtos } from "../Service/Produtos";
 import { addCarrinho } from "../Service/Service";
 
 export const Loja = () => {
-   const { itensCarrinho, setItensCarrinho } = useAppContext();
+   const { setItensCarrinho } = useAppContext();
 
    const comprar = async (produto) => {
-      setItensCarrinho(
-         await addCarrinho(produto)
+      setItensCarrinho (
+         await addCarrinho (produto)
       );
    }
 
@@ -42,7 +42,9 @@ export const Loja = () => {
                                        fonteClass="preco fonte-2"
                                        tituloBotao="Comprar"
                                        botaoVariante="outline-success"
-                                       aoClicar={() => comprar(produto)}
+                                       tituloCarregando="Adicionando ao carrinho"
+                                       varianteCarregando="secondary"
+                                       funcao={() => comprar (produto)}
                                     />
                                  </Col>
                               );

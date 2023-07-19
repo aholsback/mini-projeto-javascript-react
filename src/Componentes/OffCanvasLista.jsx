@@ -1,7 +1,7 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Botao } from "./Botao";
+import { Link } from "react-router-dom";
 
 export const OffCanvasLista = (props) => {
    const precoFinal = () => {
@@ -82,7 +82,9 @@ export const OffCanvasLista = (props) => {
          <br />
          <Row>
             <Col>
-               <Botao titulo={props.botaoTitulo} variante={props.botaoVariante} aoClicar={props.aoClicar} />
+               <Link className={props.botaoVariante} to="../carrinho">
+                  {props.botaoTitulo}
+               </Link>
             </Col>
          </Row>
 

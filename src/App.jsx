@@ -13,11 +13,11 @@ function App() {
          <AppContext>
             <Routes>
                <Route path="/" element={<PaginaInicial />} />
-               <Route path="loja" element={<Loja />} />
-               <Route path="sobre-nos" element={<SobreNos />} />
-               <Route path="equipe" element={<Equipe />} />
-               <Route path="contato" element={<Contato />} />
-               <Route path="carrinho" element={<Carrinho />} />
+               <Route path="/loja" element={<Loja />} />
+               <Route path="/sobre-nos" element={<SobreNos />} />
+               <Route path="/equipe" element={<Equipe />} />
+               <Route path="/contato" element={<Contato />} />
+               <Route path="/carrinho" element={<Carrinho />} />
             </Routes>
          </AppContext>
       </BrowserRouter>

@@ -54,10 +54,7 @@ export const Cabecalho = () => {
                         <OffCanvasLista
                            array={itensCarrinho}
                            botaoTitulo="Ir para o carrinho"
-                           botaoVariante="outline-success"
-                           aoClicar={() => {
-                              pagina ("/carrinho");
-                           }}
+                           botaoVariante="btn btn-outline-success"
                         />}
                   />
                </div>
@@ -80,19 +77,19 @@ export const Cabecalho = () => {
                               Página inicial
                            </Link>
 
-                           <Link className="nav-link" to="loja">
+                           <Link className="nav-link" to="/loja">
                               Loja
                            </Link>
 
-                           <Link className="nav-link" to="sobre-nos">
+                           <Link className="nav-link" to="/sobre-nos">
                               Sobre nós
                            </Link>
 
-                           <Link className="nav-link" to="equipe">
+                           <Link className="nav-link" to="/equipe">
                               Equipe
                            </Link>
 
-                           <Link className="nav-link" to="contato">
+                           <Link className="nav-link" to="/contato">
                               Contato
                            </Link>
                         </Nav>
