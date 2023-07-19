@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+}
+
+.carrinho {
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.conteudoCarrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: var(--cor-vidro);
+    box-shadow: var(--sombra-vidro);
+    backdrop-filter: var(--filtro-vidro);
+    -webkit-backdrop-filter: var(--filtro-vidro);
+}
+
+.conteudoCarrinho h1 {
+    color: var(--cor-2);
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.conteudoCarrinho h1:hover {
+    color: var(--cor-5);
+}
+
+.titulos {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: 900;
+    text-indent: 0;
+}
+
+.fotoProduto {
+    border: 2px solid var(--cor-2);
+    border-radius: 100px;
+}
+
+.fotoProduto:hover {
+    border: 2px solid var(--cor-5);
+}
+
+.simbolos {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    color: var(--cor-2);
+    border: 2px solid var(--cor-2);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.simbolos:hover {
+    color: var(--cor-3);
+    border: 2px solid var(--cor-5);
+    background-color: var(--cor-5);
+}
+
+.textos {
+    margin: 0;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-indent: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textoTitulos {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.precoFinal {
+    display: flex;
+    text-align: start;
+    margin: 0;
+    padding: 10px;
+    text-indent: 0;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.botao {
+    color: var(--cor-2);
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-transform: uppercase !important;
+    padding: 10px;
+    border: 2px solid var(--cor-2);
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.botao:hover {
+    color: var(--cor-5);
+    background-color: var(--cor-2);
+}
