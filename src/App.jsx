@@ -1,26 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppContext } from "./AppContext/AppContext";
-import { Cabecalho } from "./Parciais/Cabecalho";
 import { PaginaInicial } from "./Paginas/PaginaInicial";
-import { Rodape } from "./Parciais/Rodape";
+import { Loja } from "./Paginas/Loja";
 
-function App () {
+function App() {
    return (
       <BrowserRouter>
          <AppContext>
-            <div className="rolagem">
-               <section className="paginas">
-                  <Cabecalho />
-
-                  <Routes>
-                     <Route path="/" element={<PaginaInicial />} />
-                  </Routes>
-               </section>
-
-               <section className="paginas">
-                  <Rodape />
-               </section>
-            </div>
+            <Routes>
+               <Route path="/" element={<PaginaInicial />} />
+               <Route path="loja" element={<Loja />} />
+            </Routes>
          </AppContext>
       </BrowserRouter>
    );

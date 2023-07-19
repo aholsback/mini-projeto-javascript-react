@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "../Projeto/css/cabecalho/cabecalho.css";
 import "../Projeto/css/cabecalho/responsividade.css";
 import Logotipo from "../Projeto/img/logotipo.png";
@@ -5,10 +6,25 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../AppContext/AppContext";
+import { ComponenteOffCanvas } from "../Componentes/OffCanvas";
+import { OffCanvasLista } from "../Componentes/OffCanvasLista";
 
 export const Cabecalho = () => {
    const { itensCarrinho, setItensCarrinho } = useAppContext ();
+
+   const [offCanvas, setOffCanvas] = useState (false);
+
+   const abrirOffCanvas = () => {
+      setOffCanvas (true);
+   }
+
+   const fecharOffCanvas = () => {
+      setOffCanvas (false);
+   }
+
+   const pagina = useNavigate ();
 
    return (
       <div className="cabecalho">
@@ -22,12 +38,29 @@ export const Cabecalho = () => {
                      Entrar
                   </button>
 
-                  <button className="carrinho fonte-2" type="button">
+                  <button className="carrinho fonte-2" type="button" onClick={abrirOffCanvas}>
                      <span className="material-symbols-outlined">
                         shopping_cart
                      </span>
                      Carrinho ({itensCarrinho.length})
                   </button>
+
+                  <ComponenteOffCanvas
+                     abrir={offCanvas}
+                     fechar={fecharOffCanvas}
+                     posicao="end"
+                     titulo="Carrinho"
+                     corpo={itensCarrinho.length === 0 ?
+                        "Carrinho vazio." :
+                        <OffCanvasLista
+                           array={itensCarrinho}
+                           botaoTitulo="Ir para o carrinho"
+                           botaoVariante="outline-success"
+                           aoClicar={() => {
+                              pagina ("/carrinho");
+                           }}
+                        />}
+                  />
                </div>
 
                <Navbar className="nav-menu" expand="lg">

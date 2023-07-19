@@ -21,9 +21,7 @@ export const addCarrinho = async (produto) => {
 
    transformarString (produtos);
 
-   return (prevItem) => (
-      [...prevItem, produto]
-   );
+   return (produtos);
 }
 
 export const removerCarrinho = async (produto) => {
@@ -41,7 +39,5 @@ export const removerCarrinho = async (produto) => {
 
    transformarString (produtos);
 
-   return (prevItem) => (
-      [...prevItem, produto]
-   );
+   return (produtos);
 }
